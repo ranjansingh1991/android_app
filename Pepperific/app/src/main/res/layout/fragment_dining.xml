@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:divider="#fff"
+            android:background="#fff"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="25dp"
+        android:background="#a5a5a5"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:text="Chef's Testing menus are per table only"/>
+
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:text="$220 per person . $360 with wine paring per perso"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

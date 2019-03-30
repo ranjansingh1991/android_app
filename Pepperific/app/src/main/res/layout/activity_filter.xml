@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp">
+
+    <include layout="@layout/toolbar_category"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <customfonts.MyTextView_Lato_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Filter"
+        android:textColor="#a5a5a5"
+        android:layout_marginLeft="24.3dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26.3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#373737"
+            android:textSize="15.3sp"
+            android:layout_gravity="center"
+            android:text="Book a table"
+            />
+
+        <!--<Switch-->
+            <!--android:id="@+id/switchPlaytimePoints"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="right"-->
+            <!--android:theme="@style/SCBSwitch" />-->
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_button"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26.3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#373737"
+            android:textSize="15.3sp"
+            android:layout_gravity="center"
+            android:text="Rated 3.5 +"
+            />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_button"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26.3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#373737"
+            android:textSize="15.3sp"
+            android:layout_gravity="center"
+            android:text="Open now"
+            />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_button"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26.3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#373737"
+            android:textSize="15.3sp"
+            android:layout_gravity="center"
+            android:text="Bookmarked"
+            />
+
+        <ToggleButton
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_button"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a5a5a5"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="29.3dp"/>
+
+
+    <customfonts.MyTextView_Lato_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Cost"
+        android:textColor="#a5a5a5"
+        android:layout_marginLeft="24.3dp"
+        android:layout_marginTop="24.7dp"
+        android:textSize="12sp"/>
+
+        <!--<com.github.mikephil.charting.charts.LineChart-->
+            <!--android:id="@+id/chart1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_above="@+id/seekBar1" />-->
+
+
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/rangeSeekbar1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:min_value="50"
+        app:max_value="1000"
+        app:bar_color="#cfcfcf"
+        app:bar_highlight_color="#e92324"
+        app:left_thumb_image="@drawable/ic_circle_icon"
+        app:right_thumb_image="@drawable/ic_circle_icon"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Lato_Regular
+            android:id="@+id/textMin1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#373737"
+            android:textSize="15.3dp"/>
+
+        <customfonts.MyTextView_Lato_Regular
+            android:id="@+id/textMin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#373737"
+            android:text="12"
+            android:textSize="15.3dp"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a5a5a5"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="23.3dp"/>
+
+
+    <customfonts.MyTextView_Lato_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cusine Type"
+        android:textColor="#a5a5a5"
+        android:layout_marginLeft="24.3dp"
+        android:layout_marginTop="26.7dp"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a5a5a5"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15.3dp"/>
+
+
+    <customfonts.MyTextView_Lato_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary Restrictions"
+        android:textColor="#a5a5a5"
+        android:layout_marginLeft="24.3dp"
+        android:layout_marginTop="26.7dp"
+        android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64.7dp"
+        android:background="#e92324"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+
+        <customfonts.MyTextView_Lato_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See 230 restaurants"
+            android:textColor="#fff"
+            android:textSize="15.3sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:tint="#fff"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_right_arrow"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

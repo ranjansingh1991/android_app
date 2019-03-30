@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kopy_KitabTask</string>
+
+    <string name="back">back</string>
+    <string name="what_do_you_get">What do you get?</string>
+    <string name="e_books_list">E-books list</string>
+    <string name="features">Features</string>
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:paddingBottom="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/go_premium_icon" />
+
+            <TextView
+                android:id="@+id/tv_Head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="How will this benifit you?"
+                android:textColor="#383838"
+                android:textSize="@dimen/textview_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Print your notes/ Highlights and carry it like a booklet \n Premium ebook packs worth INR 700+"
+                android:textColor="#383838"
+                android:textSize="@dimen/button_font_size"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12.3dp"
+                android:layout_marginTop="30.7dp"
+                android:text="Premimum features"
+                android:textColor="#383838"
+                android:textSize="@dimen/dialog_message" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvVerticalList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12.3dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Premimum ebooks"
+                    android:textColor="#383838"
+                    android:textSize="@dimen/dialog_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select Category"
+                    android:textSize="@dimen/dialog_message" />
+
+                <Spinner
+                    android:id="@+id/spData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a5a5a5" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvHorizontalList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:fadingEdgeLength="0dp"
+                android:overScrollMode="never"
+                android:paddingLeft="24.3dp"
+                android:paddingRight="24.3dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnGoPremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_button_corner"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:text="gopremium"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        tools:ignore="HardcodedText,MissingPrefix,SpUsage" />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/notes_and_bookmarks_flip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/notes_and_bookmarks_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fadingEdgeLength="0dp"
+                android:overScrollMode="never"
+                android:scrollbars="vertical" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.CircularProgressView
+                android:id="@+id/notes_and_bookmarks_progress"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                custom:cpv_animAutostart="true"
+                custom:cpv_color="@color/action_bar_background"
+                custom:cpv_indeterminate="true"
+                custom:cpv_thickness="4dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/notes_bookmark_not_found_icon_size"
+                android:layout_height="@dimen/notes_bookmark_not_found_icon_size"
+                android:src="@drawable/notes_big" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="No Notes are created"
+                android:textColor="@color/action_bar_background"
+                android:textSize="@dimen/notes_bookmark_not_found_font_size"
+                custom:font_name="Roboto-Medium" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Try Cool Annotation Tool to Highlight, Underline\n&amp; Strikeout - through Features."
+                android:textColor="#50000000"
+                android:textSize="@dimen/notes_bookmark_not_found_font_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/notes_bookmark_not_found_icon_size"
+                android:layout_height="@dimen/notes_bookmark_not_found_icon_size"
+                android:src="@drawable/bookmark_big" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="No Bookmarks are created"
+                android:textColor="@color/action_bar_background"
+                android:textSize="@dimen/notes_bookmark_not_found_font_size"
+                custom:font_name="Roboto-Medium" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Bookmark your important pages.\nClick Bookmark icon to Bookmark the page."
+                android:textColor="#50000000"
+                android:textSize="@dimen/notes_bookmark_not_found_font_size_small" />
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

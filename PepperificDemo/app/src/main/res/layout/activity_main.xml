@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    tools:context="in.semicolonindia.pepperificdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btnGoPremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_button_gardient"
+        android:text="gopremium"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="HardcodedText,MissingPrefix,SpUsage" />
+
+    <in.semicolonindia.pepperificdemo.ExataClass.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="171dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_gopremimum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How will this benifit you?"
+                    android:textColor="#383838"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="Print your notes/Highlights and carry it like a booklet \n Premium ebook packs worth INR 700+"
+                    android:textColor="#383838"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="25.3dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="5.7dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_back_icon" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Back"
+                    android:textColor="#FFF" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12.3dp"
+                android:layout_marginTop="20.7dp"
+                android:orientation="horizontal">
+
+                <in.semicolonindia.pepperificdemo.customfonts.MyTextView_Lato_Light
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Premimum features"
+                    android:textColor="#373737"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpfirst"
+                android:layout_width="match_parent"
+                android:layout_height="188.3dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="34.3dp"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="20.3dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpsecond"
+                android:layout_width="match_parent"
+                android:layout_height="188.3dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="14.3dp"
+                android:clipToPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="22.3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12.3dp"
+                android:orientation="horizontal">
+
+                <in.semicolonindia.pepperificdemo.customfonts.MyTextView_Lato_Light
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Premimum ebooks"
+                    android:textColor="#373737"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Category"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"/>
+
+                <Spinner
+                    android:id="@+id/spData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a5a5a5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_cusine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:divider="#fff"
+                    android:dividerHeight="0dp"
+                    android:paddingLeft="24.3dp"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="100dp"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </in.semicolonindia.pepperificdemo.ExataClass.StickyScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="330dp">
+
+
+    <in.semicolonindia.pepperificdemo.CircularProgressView
+        android:id="@+id/streams_progress"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        custom:cpv_animAutostart="true"
+        custom:cpv_color="#ff8b00"
+        custom:cpv_indeterminate="true"
+        custom:cpv_thickness="4dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="#ff8b00"
+        android:text="Please wait...."/>
+</LinearLayout>
+</RelativeLayout>
+

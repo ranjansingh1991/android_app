@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_list_item_state"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="82dp"
+            android:layout_height="125dp">
+
+            <ImageView
+                android:id="@+id/book_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/book_depiction"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="4dp"
+                android:paddingRight="4dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:minHeight="125dp"
+            android:orientation="vertical">
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                custom:font_name="Roboto-Medium" />
+
+            <com.kopykitab.class9.cbse.oswaal.components.TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Book Author"
+                android:textColor="@android:color/black"
+                custom:font_name="Roboto-Light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#30000000" />
+</LinearLayout>
